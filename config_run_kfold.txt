@@ -1,0 +1,24 @@
+[PARAMS]
+DATA_DIR = ../DATASETS/stenosis_data
+DATA_DIR_art2 = ../DATASETS/stenosis_artificial_data_II
+DATA_DIR_art1 = ../DATASETS/stenosis_artificial_data_I
+WEIGHTS_DIR = weights
+RESULTS_DIR = results
+torch_seed = 11
+CBAM = True
+model_name = resnet18cbam_bgm
+model_depth = 18
+finetuning = True
+run_test = True
+GRADCAM = True
+imagenet_norm = False
+imagenet_init = False
+from_scratch = False
+model_checkpoint = ../new_checkpoints/model_resnet18cbam_bezier_I.pth
+model_checkpoint_1 = ../checkpoints_imagenet/resnet18-f37072fd.pth
+batch_size = 4
+lr = 0.001
+momentum = 0.8
+factor= 0.1
+patience = 20
+num_epochs = 2
